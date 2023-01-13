@@ -89,8 +89,8 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 })
 
 section:Button({
-   Text = "Remote Spy",
+   Text = "Stalk Detector",
    Callback = function()
-print("wip")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/Stalk%20Detector.txt"))()
 })
 end
