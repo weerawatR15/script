@@ -96,3 +96,10 @@ section:Button({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/Stalk%20Detector.txt"))()   
 end
 })
+
+section:Button({
+   Text = "Anti Kick (May not work)",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/5n5fQwXy"))()
+end
+})
