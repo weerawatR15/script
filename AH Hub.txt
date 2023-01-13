@@ -89,8 +89,8 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 })
 
 section:Button({
-   Text = "Stalk Detector",
+   Text = "Stalk Detector (BUGGED)",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/Stalk%20Detector.txt"))()
+print("Gd lite")
 })
 end
