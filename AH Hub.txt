@@ -1,0 +1,86 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Kronos"))()
+
+local window = library:Window({
+   Title = "AH Hub - by weerawatR15#1521",
+   Accent = Color3.fromRGB(69,69,207),
+   Logo = 3610245066,
+   ToggleKey = Enum.KeyCode.LeftAlt
+})
+
+local tab = window:NewTab({
+   Logo = 4483345998
+})
+
+local tabsection = tab:TabSection({
+   Title = "Main Tab"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Trolls"
+})
+
+local section = column:Section({
+   Title = "Trolls"
+})
+
+section:Button({
+   Text = "Import Builds (EXECUTE WITH F3X)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/DONOT.lua"))()
+ end
+})
+local tabsection = tab:TabSection({
+   Title = "Abusive"
+})
+
+section:Button({
+   Text = "Kill Yourself",
+   Callback = function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+ end
+})
+
+section:Toggle({
+   Text = "Work in progress",
+   State = false,
+   Callback = function() end
+})
+
+section:TextLabel({
+   Text = "eek"
+})
+
+section:Divide({})
+
+section:Keybind({
+   Text = "Keybind",
+   Key = Enum.KeyCode.F,
+   Callback = function() end
+})
+
+section:Dropdown({
+   Text = "Dropdown",
+   List = {'eek', 'eek', 'eek'},
+   Callback = function()
+
+ end
+})
+
+section:Slider({
+   Text = "Slider",
+   Min = 0,
+   Max = 100,
+   Def = 50,
+   Callback = function() end
+})
+
+section:Button({
+   Text = "Crash Server (BE R15 WITH LAYERED CLOTH)",
+   Callback = function()
+-- be R15 and wear layered clothing
+for _,s in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+    if s:IsA("Motor6D") and s.Name ~= "Neck" then
+        local fard = s.Parent
+        s:Destroy()
+        fard.CFrame = CFrame.new(9e9 * _,9e9* _,9e9*_)
+ end
