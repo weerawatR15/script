@@ -41,9 +41,14 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
 })
 
 section:Toggle({
-   Text = "Work in progress",
+   Text = "Just... Don't",
    State = false,
-   Callback = function() end
+   Callback = function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Well guess what?", -- Required
+Text = "this feature doesn't do much.", -- Required
+Icon = "rbxassetid://9986024044" -- Option
+ end
 })
 
 section:TextLabel({
