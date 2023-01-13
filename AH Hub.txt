@@ -91,7 +91,7 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 })
 
 section:Button({
-   Text = "Tsar Bomba",
+   Text = "Stalk Detector",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/Stalk%20Detector.txt"))()
  end
