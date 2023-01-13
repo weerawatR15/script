@@ -99,4 +99,3 @@ section:Button({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/Stalk%20Detector.txt"))()
  end
 })
-end
