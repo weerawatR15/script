@@ -1,0 +1,77 @@
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Join discord and tell your bad user.", -- Required
+	Text = "in order to add more bad user", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+local Players = game:GetService("Players")
+local desiredPlayer = "rakehunter1935"
+
+Players.PlayerAdded:Connect(function(player)
+    if player.Name == desiredPlayer then
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Save your build or leave quick.", -- Required
+	Text = "Victim has joined", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})   
+    end
+end)
+local Players = game:GetService("Players")
+local desiredPlayer = "PuppySquad30"
+
+Players.PlayerAdded:Connect(function(player)
+    if player.Name == desiredPlayer then
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Save your build or leave quick.", -- Required
+	Text = "Victim has joined", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})   
+    end
+end)
+local Players = game:GetService("Players")
+local desiredPlayer = "LuaQax"
+
+Players.PlayerAdded:Connect(function(player)
+    if player.Name == desiredPlayer then
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Save your build or leave quick.", -- Required
+	Text = "Victim has joined", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})   
+    end
+end)
+local Players = game:GetService("Players")
+local desiredPlayer = "HTTPS_402"
+
+Players.PlayerAdded:Connect(function(player)
+    if player.Name == desiredPlayer then
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Save your build or leave quick.", -- Required
+	Text = "Victim has joined", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})   
+    end
+end)
+local Players = game:GetService("Players")
+local desiredPlayer = "Derpygamr973"
+
+Players.PlayerAdded:Connect(function(player)
+    if player.Name == desiredPlayer then
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Save your build or leave quick.", -- Required
+	Text = "Victim has joined", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})   
+    end
+end)
+local Players = game:GetService("Players")
+local desiredPlayer = "Trep0"
+
+Players.PlayerAdded:Connect(function(player)
+    if player.Name == desiredPlayer then
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Save your build or leave quick.", -- Required
+	Text = "Victim has joined", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})   
+    end
+end)
