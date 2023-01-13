@@ -1,11 +1,105 @@
-     game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "...", -- Required
-	Text = "This has been closed due it being OP", -- Required
-	Icon = "rbxassetid://1234567890" -- Optional
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Kronos"))()
+
+local window = library:Window({
+   Title = "AH Hub - by weerawatR15#1521",
+   Accent = Color3.fromRGB(69,69,207),
+   Logo = 3610245066,
+   ToggleKey = Enum.KeyCode.LeftAlt
 })
-task.wait(4)
-     game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "...", -- Required
-	Text = "Can be reopened", -- Required
-	Icon = "rbxassetid://1234567890" -- Optional
+
+local tab = window:NewTab({
+   Logo = 4483345998
+})
+
+local tabsection = tab:TabSection({
+   Title = "Main Tab"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Trolls"
+})
+
+local section = column:Section({
+   Title = "Trolls"
+})
+
+section:Button({
+   Text = "Import Builds (EXECUTE WITH F3X)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/DONOT.lua"))()
+ end
+})
+local tabsection = tab:TabSection({
+   Title = "Abusive"
+})
+
+section:Button({
+   Text = "Kill Yourself",
+   Callback = function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+ end
+})
+
+section:Toggle({
+   Text = "Just... Don't",
+   State = false,
+   Callback = function()
+print("air")
+ end
+})
+
+section:TextLabel({
+   Text = "eek"
+})
+
+section:Divide({})
+
+section:Keybind({
+   Text = "Keybind",
+   Key = Enum.KeyCode.F,
+   Callback = function() end
+})
+
+section:Dropdown({
+   Text = "Dropdown",
+   List = {'eek', 'eek', 'eek'},
+   Callback = function()
+
+ end
+})
+
+section:Slider({
+   Text = "Slider",
+   Min = 0,
+   Max = 100,
+   Def = 50,
+   Callback = function() end
+})
+
+section:Button({
+   Text = "Tsar Bomba",
+   Callback = function()
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "crash server"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+ end
+})
+
+section:Button({
+   Text = "Stalk Detector",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/Stalk%20Detector.txt"))()   
+end
+})
+
+section:Button({
+   Text = "Anti Kick (May not work)",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/5n5fQwXy"))()
+end
 })
