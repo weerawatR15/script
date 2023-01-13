@@ -91,12 +91,6 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 section:Button({
    Text = "Remote Spy",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/nrv-ous/Hydroxide/rebirth/init.lua"))()
- end
+print("wip")
 })
-
-section:Button({
-   Text = "Obtain nuclear plate (Anti crash)",
-   Callback = function()
-print("This is wip")
- end
+end
