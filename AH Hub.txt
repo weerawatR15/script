@@ -75,12 +75,12 @@ section:Slider({
 })
 
 section:Button({
-   Text = "Crash Server",
+   Text = "Tsar Bomba",
    Callback = function()
 local args = {
     [1] = {
         [1] = "LOAD",
-        [2] = "Crash Server"
+        [2] = "crash server"
     }
 }
 
