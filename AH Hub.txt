@@ -87,10 +87,4 @@ local args = {
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
  end
 })
-
-section:Button({
-   Text = "Stalk Detector (BUGGED)",
-   Callback = function()
-print("Gd lite")
-})
 end
