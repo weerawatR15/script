@@ -127,6 +127,20 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/V
 end
 })
 
+section:Button({
+   Text = "Harked Reborn BUGGED AND NOT WORK",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JxcExploit/Harkedv2-script/main/Leaked-v2hardked"))()
+end
+})
+
+section:Button({
+   Text = "Kick Yourself",
+   Callback = function()
+game.Players.LocalPlayer:Kick(Kicked)
+end
+})
+
 local section = column:Section({
    Title = "Teleports"
 })
