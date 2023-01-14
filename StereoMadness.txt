@@ -155,6 +155,13 @@ loadstring(game:HttpGet(('https://pastebin.com/raw/2NNDTLjL'),true))()
 end
 })
 
+section:Button({
+   Text = "Saitama FE",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/weerawatR15/script/main/Saitama.txt'),true))()
+end
+})
+
 local section = column:Section({
    Title = "Teleports"
 })
