@@ -30,7 +30,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/ma
  end
 })
 local tabsection = tab:TabSection({
-   Title = "Abusive"
+   Title = "Cuming soon"
 })
 
 section:Button({
