@@ -126,3 +126,16 @@ section:Button({
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
 end
 })
+
+local section = column:Section({
+   Title = "Teleports"
+})
+
+section:Button({
+   Text = "Teleport to house",
+   Callback = function()
+local character = game.Players.LocalPlayer.Character
+local destination = Vector3.new(-1, 28, 80)
+character:MoveTo(destination)
+end
+})
