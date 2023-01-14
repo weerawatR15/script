@@ -162,6 +162,13 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/weerawatR15/script/m
 end
 })
 
+section:Button({
+   Text = "Quiet Bacon's hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/HubToNotStrugCopying.txt"))()
+end
+})
+
 local section = column:Section({
    Title = "Teleports"
 })
