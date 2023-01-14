@@ -142,9 +142,16 @@ end
 })
 
 section:Button({
-   Text = "Kill UI",
+   Text = "Kill UI (Need Gear)",
    Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/weerawatR15/script/main/KillGUI.txt'),true))()
+end
+})
+
+section:Button({
+   Text = "Steve FE",
+   Callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/2NNDTLjL'),true))()
 end
 })
 
