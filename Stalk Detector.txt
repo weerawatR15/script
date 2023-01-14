@@ -75,3 +75,28 @@ Players.PlayerAdded:Connect(function(player)
 })   
     end
 end)
+local Players = game:GetService("Players")
+local desiredPlayer = "xvdomination"
+
+Players.PlayerAdded:Connect(function(player)
+    if player.Name == desiredPlayer then
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Save your build or leave quick.", -- Required
+	Text = "Victim has joined", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})   
+    end
+end)
+local Players = game:GetService("Players")
+local desiredPlayer = "japanzkitten"
+
+Players.PlayerAdded:Connect(function(player)
+    if player.Name == desiredPlayer then
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Save your build or leave quick.", -- Required
+	Text = "Victim has joined", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})   
+    end
+end)
+
