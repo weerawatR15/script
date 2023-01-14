@@ -671,7 +671,7 @@ Description.Text = [[
 - The load time will be long, depending
   on your model size
 - You must have F3X in your inv or hand
-- Made by Snippy#1118
+- Made by Mr. Snappy#6924
 - Some models will NOT work!
 ]]
 Description.TextColor3 = Color3.fromRGB(43, 43, 43)
