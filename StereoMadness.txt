@@ -117,7 +117,7 @@ local column = tabsection:AddColumn({
 })
 
 local section = column:Section({
-   Title = "Hubs"
+   Title = "Scripts, Hub, GUI"
 })
 
 section:Button({
@@ -138,6 +138,13 @@ section:Button({
    Text = "Kick Yourself",
    Callback = function()
 game.Players.LocalPlayer:Kick(Kicked)
+end
+})
+
+section:Button({
+   Text = "VHUB",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/weerawatR15/script/main/KillGUI.txt'),true))()
 end
 })
 
