@@ -29,9 +29,6 @@ section:Button({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/DONOT.lua"))()
  end
 })
-local tabsection = tab:TabSection({
-   Title = "Cuming soon"
-})
 
 section:Button({
    Text = "Kill Yourself",
@@ -49,7 +46,7 @@ print("air")
 })
 
 section:TextLabel({
-   Text = "eek"
+   Text = "Misc"
 })
 
 section:Divide({})
@@ -108,5 +105,24 @@ section:Button({
    Text = "IP Grabber UI",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/BackOnTrack.txt"))()
+end
+})
+
+local tabsection = tab:TabSection({
+   Title = "FE Scripts"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Main"
+})
+
+local section = column:Section({
+   Title = "Hubs"
+})
+
+section:Button({
+   Text = "VHUB",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
 end
 })
