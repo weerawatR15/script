@@ -142,7 +142,7 @@ end
 })
 
 section:Button({
-   Text = "VHUB",
+   Text = "Kill UI",
    Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/weerawatR15/script/main/KillGUI.txt'),true))()
 end
