@@ -170,6 +170,17 @@ end
 })
 
 local section = column:Section({
+   Title = "Trolls"
+})
+
+section:Button({
+   Text = "Audio SPAM FE",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/weerawatR15/script/main/Fe%20Audio%20spamming%20gui.txt"))()
+end
+})
+
+local section = column:Section({
    Title = "Teleports"
 })
 
