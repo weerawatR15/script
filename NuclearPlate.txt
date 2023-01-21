@@ -30,7 +30,8 @@ end)
 while true do
     wait()
     if mouseDown then
-          game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = 100
-game.Players.LocalPlayers.Character.Humanoid.JumpPower = 100
+          game.Players.LocalPlayer.character.Humanoid.JumpPower = 100
+          game.Players.LocalPlayer.character.Humanoid.WalkSpeed = 100
+          print("fly soon")
     end
 end
