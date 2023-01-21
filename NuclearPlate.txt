@@ -13,37 +13,23 @@ plate.ToolTip = "Protect yourself."
 print("emu")
 task.wait(1)
 plate.Parent = game.Players.weerawatR15.Backpack
-task.wait(3)
-local lp = game:GetService "Players".LocalPlayer
-if lp.Character:FindFirstChild "Head" then
-    local char = lp.Character
-    char.Archivable = true
-    local new = char:Clone()
-    new.Parent = workspace
-    lp.Character = new
-    wait(2)
-    local oldhum = char:FindFirstChildWhichIsA "Humanoid"
-    local newhum = oldhum:Clone()
-    newhum.Parent = char
-    newhum.RequiresNeck = false
-    oldhum.Parent = nil
-    wait(2)
-    lp.Character = char
-    new:Destroy()
-    wait(1)
-    newhum:GetPropertyChangedSignal("Health"):Connect(
-        function()
-            if newhum.Health <= 0 then
-                oldhum.Parent = lp.Character
-                wait(1)
-                oldhum:Destroy()
-            end
-        end)
-    workspace.CurrentCamera.CameraSubject = char
-    if char:FindFirstChild "Animate" then
-        char.Animate.Disabled = true
-        wait(.1)
-        char.Animate.Disabled = false
+local plate = game.Players.weerawatR15.Backpack
+local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+
+mouseDown = false
+
+mouse.Button1Down:connect(function()
+    mouseDown = true
+end)
+
+mouse.Button1Up:connect(function()
+    mouseDown = false
+end)
+
+while true do
+    wait()
+    if mouseDown then
+    	Plr.Character.Humanoid.WalkSpeed = 100
     end
-    lp.Character:FindFirstChild "Head":Destroy()
 end
