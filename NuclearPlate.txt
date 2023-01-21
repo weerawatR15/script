@@ -27,6 +27,7 @@ mouse.Button1Up:connect(function()
     mouseDown = false
 end)
 
+while true do
     wait()
     if mouseDown then
           game.Players.LocalPlayer.character.Humanoid.JumpPower = 100
