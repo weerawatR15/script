@@ -9,7 +9,11 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 task.wait(1)
 local plate = game.Workspace.LinkedSword
 plate.TextureId = "rbxassetid://1411962042"
+plate.ToolTip = "Protect yourself."
 print("emu")
+task.wait(1)
+plate.Parent = game.Players.weerawatR15.Backpack
+task.wait(3)
 local lp = game:GetService "Players".LocalPlayer
 if lp.Character:FindFirstChild "Head" then
     local char = lp.Character
