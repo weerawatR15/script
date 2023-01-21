@@ -30,6 +30,6 @@ end)
 while true do
     wait()
     if mouseDown then
-    	Plr.Character.Humanoid.WalkSpeed = 100
+    	game.StarterPlayer.CharacterWalkSpeed = 150
     end
 end
