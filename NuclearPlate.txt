@@ -12,8 +12,8 @@ plate.TextureId = "rbxassetid://1411962042"
 plate.ToolTip = "Protect yourself."
 print("emu")
 task.wait(1)
-plate.Parent = game.Players.(ostrich).Backpack
-local plate = game.Players.(ostrich).Backpack
+plate.Parent = game.Players.weerawatR15.Backpack
+local plate = game.Players.weerawatR15.Backpack
 local plr = game.Players.LocalPlayer
 local mouse = plr:GetMouse()
 
@@ -30,6 +30,7 @@ end)
 while true do
     wait()
     if mouseDown then
-    	humanoid.WalkSpeed = 150
+          game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = 100
+game.Players.LocalPlayers.Character.Humanoid.JumpPower = 100
     end
 end
