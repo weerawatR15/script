@@ -46,10 +46,7 @@ section:Toggle({
    Text = "Just... Don't",
    State = false,
    Callback = function()
-     game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Guess what", -- Required
-	Text = "This thing does nothing :)", -- Required
-	Icon = "rbxassetid://" -- Optional
+print("air")
  end
 })
 
