@@ -237,12 +237,21 @@ task.wait(0.01)
 end
 })
 
-Tab:AddTextbox({
-	Name = "Load Builds",
-	Default = "Builds input",
+Teb:AddTextbox({
+	Name = "Crash Users",
+	Default = "User input",
 	TextDisappear = false,
 	Callback = function(Value)
-chat("/e :forceviewcam (Value) porgumaastik")
+chat("/e :forceviewcam .. ToString(Value) porgumaastik")
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "Run Commands",
+	Default = "Command input",
+	TextDisappear = false,
+	Callback = function(Value)
+chat(Value)
 	end	  
 })
 
