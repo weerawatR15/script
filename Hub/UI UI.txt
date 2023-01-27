@@ -5,9 +5,11 @@ local function chat(msg)
     game.Players:Chat(msg)
     ChatStuff:SetTextFromInput("")
 end
-
-if Player.CharacterAdded then
-        chat("/e :god| :f3x| :flynoclip| :ff")
+local Players = game:GetService("Players")
+Players.PlayerAdded:Connect(function(player) -- First time player joins
+chat("/e :god| :f3x| :flynoclip| :ff")
+player.CharacterAdded:Connect(function(char) -- when their character loads in
+chat("/e :god| :f3x| :flynoclip| :ff")
 end
 
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
