@@ -272,7 +272,7 @@ local Ostrich2 = Emu:AddSection({
 Emu:AddButton({
 	Name = "Discord",
 	Callback = function()
-setClipboard("eek#1521")
+setclipboard("eek#1521")
   	end    
 })
 
