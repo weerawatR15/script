@@ -6,12 +6,19 @@ local function chat(msg)
     ChatStuff:SetTextFromInput("")
 end
 
+local Player = game.Players.LocalPlayer
+local Char = Player.Character
+
+Char:WaitForChild("Humanoid").Died:Connect(function()
+        chat("/e :god| :f3x| :flynoclip| :ff")
+end
+
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 local Window = OrionLib:MakeWindow({Name = "AH UI UI", HidePremium = false, IntroText = "I Will Cut Your PP", SaveConfig = true, ConfigFolder = "HubFucked"})
 
 OrionLib:MakeNotification({
 	Name = ">:(",
-	Content = "Subscribe Nigger",
+	Content = "Subscribe You Retard",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
