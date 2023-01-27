@@ -6,10 +6,7 @@ local function chat(msg)
     ChatStuff:SetTextFromInput("")
 end
 
-local Player = game.Players.LocalPlayer
-local Char = Player.Character
-
-Char:WaitForChild("Humanoid").Died:Connect(function()
+if Player.CharacterAdded then
         chat("/e :god| :f3x| :flynoclip| :ff")
 end
 
