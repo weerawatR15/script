@@ -114,6 +114,20 @@ chat("/e :m UI UI")
   	end    
 })
 
+Tab:AddButton({
+	Name = "BRRT Aka Boom",
+	Callback = function()
+chat("/e :music 2244925180 true 1 inf| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Космос",
+	Callback = function()
+chat("/e :n Космос| :wait 0.01| :n К о с м о с| :wait 0.01| :n К  о  с  м  о  с| :wait 1| :time 0| :vibrate all 0.2| :ambient 100 0 100| :oambient 100 0 100| :loadb crash server")
+  	end    
+})
+
 Tab:AddTextbox({
 	Name = "Load Builds",
 	Default = "Builds input",
