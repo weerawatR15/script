@@ -235,7 +235,7 @@ Teb:AddTextbox({
 	Default = "User input",
 	TextDisappear = false,
 	Callback = function(Value)
-chat("/e :forceviewcam .. ToString(Value) porgumaastik")
+chat("/e :forceviewcam Value porgumaastik")
 	end	  
 })
 
@@ -245,9 +245,16 @@ Tab:AddTextbox({
 	TextDisappear = false,
 	Callback = function(Value)
 chat(Value)
-	end	  
+	end	    
 })
 
+local Section2 = Tab:AddSection({
+	Name = "Make sure"
+})
+
+local Section2 = Tab:AddSection({
+	Name = "IT HAS :re or any"
+})
 local Emu = Window:MakeTab({
 	Name = "Social Medias",
 	Icon = "rbxassetid://4483345998",
