@@ -124,7 +124,7 @@ chat("/e :m UI UI")
 Tab:AddTextbox({
 	Name = "Load Builds",
 	Default = "Builds input",
-	TextDisappear = true,
+	TextDisappear = false,
 	Callback = function(Value)
 		local args = {
     [1] = {
@@ -141,7 +141,7 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 Teb:AddTextbox({
 	Name = "Spam Builds",
 	Default = "Builds input",
-	TextDisappear = true,
+	TextDisappear = false,
 	Callback = function(Value)
 	print("e")
 local args = {
@@ -235,6 +235,15 @@ local args = {
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
 task.wait(0.01)
 end
+})
+
+Tab:AddTextbox({
+	Name = "Load Builds",
+	Default = "Builds input",
+	TextDisappear = false,
+	Callback = function(Value)
+chat("/e :forceviewcam (Value) porgumaastik")
+	end	  
 })
 
 OrionLib:Init()
