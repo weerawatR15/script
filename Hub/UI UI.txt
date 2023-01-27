@@ -88,13 +88,6 @@ Tab:AddSlider({
 	end    
 })
 
-Tab:AddButton({
-	Name = "Youtube channel",
-	Callback = function()
-setclipboard("https://youtube.com/@weerawatR15")
-  	end    
-})
-
 Teb:AddButton({
 	Name = "Crash Server 2 (DANGER)",
 	Callback = function()
@@ -253,6 +246,34 @@ Tab:AddTextbox({
 	Callback = function(Value)
 chat(Value)
 	end	  
+})
+
+local Emu = Window:MakeTab({
+	Name = "Social Medias",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Ostrich = Emu:AddSection({
+	Name = "When clicked on any link"
+})
+
+local Ostrich2 = Emu:AddSection({
+	Name = "It will copy into your clipboard"
+})
+
+Emu:AddButton({
+	Name = "Discord",
+	Callback = function()
+setClipboard("eek#1521")
+  	end    
+})
+
+Emu:AddButton({
+	Name = "Youtube channel",
+	Callback = function()
+setclipboard("https://youtube.com/@weerawatR15")
+  	end    
 })
 
 OrionLib:Init()
