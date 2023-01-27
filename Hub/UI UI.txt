@@ -1,0 +1,240 @@
+local ChatStuff = game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
+
+local function chat(msg)
+    ChatStuff:SetTextFromInput(msg)
+    game.Players:Chat(msg)
+    ChatStuff:SetTextFromInput("")
+end
+
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
+local Window = OrionLib:MakeWindow({Name = "AH UI UI", HidePremium = false, IntroText = "I Will Cut Your PP", SaveConfig = true, ConfigFolder = "HubFucked"})
+
+OrionLib:MakeNotification({
+	Name = ">:(",
+	Content = "Subscribe Nigger",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Abuse Tab",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Main"
+})
+
+local Teb = Window:MakeTab({
+	Name = "OP Tab",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Sextion = Teb:AddSection({
+	Name = "Main"
+})
+
+Tab:AddButton({
+	Name = "Crash Server (DANGER)",
+	Callback = function()
+      		local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "crash server"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddToggle({
+	Name = "Super Secret Option",
+	Default = false,
+	Callback = function(Value)
+		print("Kys")
+	end    
+})
+
+Teb:AddToggle({
+	Name = "Super Secret Option",
+	Default = false,
+	Callback = function(Value)
+		print("Kys")
+	end    
+})
+
+Tab:AddColorpicker({
+	Name = "Your Mom's Color",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+Tab:AddSlider({
+	Name = "Crocs",
+	Min = 16,
+	Max = 100,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Crocs Speed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.character.Humanoid.WalkSpeed = 16
+	end    
+})
+
+Tab:AddButton({
+	Name = "Youtube channel",
+	Callback = function()
+setclipboard("https://youtube.com/@weerawatR15")
+  	end    
+})
+
+Teb:AddButton({
+	Name = "Crash Server 2 (DANGER)",
+	Callback = function()
+	print("ready")
+	task.wait(1)
+	chat("/e :sm UI UI")
+	task.wait(1)
+      		local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "crash server"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Spam Message",
+	Callback = function()
+chat("/e :m UI UI")
+  	end    
+})
+
+Tab:AddTextbox({
+	Name = "Load Builds",
+	Default = "Builds input",
+	TextDisappear = true,
+	Callback = function(Value)
+		local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+
+	end	  
+})
+
+Teb:AddTextbox({
+	Name = "Spam Builds",
+	Default = "Builds input",
+	TextDisappear = true,
+	Callback = function(Value)
+	print("e")
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = (Value)
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(0.01)
+end
+})
+
+OrionLib:Init()
