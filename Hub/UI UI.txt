@@ -297,4 +297,18 @@ setclipboard("https://youtube.com/@weerawatR15")
         end    
 })
 
+Emu:AddButton({
+      Name = "Discord server",
+      Callback = function()
+setclipboard("https://discord.gg/5csewkYegQ")
+        end    
+})
+
+Teb:AddButton({
+      Name = "Freeze Server",
+      Callback = function()
+chat(":re |:free |:setgrav me -9e9 |:jail |:size me 50 |:hatpets me 50 |:hatpets me 50 |:hatpets me 50 |:hatpets me 50 |:hatpets me 50 |:hatpets me 50 |:hatpets me 50 |:hatpets me 50 |:hatpets me 50 |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me |:clone me")
+        end    
+})
+
 OrionLib:Init()
