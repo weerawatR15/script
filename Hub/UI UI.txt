@@ -67,15 +67,6 @@ local args = {
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
 
-local args = {
-    [1] = {
-        [1] = "LOAD",
-        [2] = "momma"
-    }
-}
-
-game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
-
 local ChatStuff = game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
 
 local function chat(msg)
