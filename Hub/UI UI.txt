@@ -38,7 +38,7 @@ local args = {
             "##################################################################################" ..
             "##################################################################################" ..
             "##################################################################################" ..
-            "################## | :tp all wp-momma | !wait 1 | :boom all 0| :boom all 0| :boom " ..
+            "################## | :tp all wp-momma | !wait 1 | :freeze all| :boom all 0| :boom all 0| :boom " ..
             "all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all " ..
             "0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :" ..
             "boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom" ..
