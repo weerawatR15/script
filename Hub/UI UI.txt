@@ -93,7 +93,7 @@ Teb:AddButton({
 	Callback = function()
 	print("ready")
 	task.wait(1)
-	chat("/e :sm UI UI")
+	chat("/e :sm UI UI| :music 2244925180 true 1 inf")
 	task.wait(1)
       		local args = {
     [1] = {
