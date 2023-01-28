@@ -10,36 +10,36 @@ local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 local Window = OrionLib:MakeWindow({Name = "AH UI UI", HidePremium = false, IntroText = "I Will Cut Your PP", SaveConfig = true, ConfigFolder = "HubFucked"})
 
 OrionLib:MakeNotification({
-	Name = ">:(",
-	Content = "Subscribe You Retard",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+      Name = ">:(",
+      Content = "Subscribe You Retard",
+      Image = "rbxassetid://4483345998",
+      Time = 5
 })
 
 local Tab = Window:MakeTab({
-	Name = "Abuse Tab",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+      Name = "Abuse Tab",
+      Icon = "rbxassetid://4483345998",
+      PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-	Name = "Main"
+      Name = "Main"
 })
 
 local Teb = Window:MakeTab({
-	Name = "OP Tab",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+      Name = "OP Tab",
+      Icon = "rbxassetid://4483345998",
+      PremiumOnly = false
 })
 
 local Sextion = Teb:AddSection({
-	Name = "Main"
+      Name = "Main"
 })
 
 Tab:AddButton({
-	Name = "Crash Server (DANGER)",
-	Callback = function()
-      		local args = {
+      Name = "Crash Server (DANGER)",
+      Callback = function()
+                  local args = {
     [1] = {
         [1] = "LOAD",
         [2] = "crash server"
@@ -48,54 +48,54 @@ Tab:AddButton({
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
 
-  	end    
+        end    
 })
 
 Tab:AddToggle({
-	Name = "Super Secret Option",
-	Default = false,
-	Callback = function(Value)
-		print("Kys")
-	end    
+      Name = "Super Secret Option",
+      Default = false,
+      Callback = function(Value)
+            print("Kys")
+      end    
 })
 
 Teb:AddToggle({
-	Name = "Super Secret Option",
-	Default = false,
-	Callback = function(Value)
-		print("Kys")
-	end    
+      Name = "Super Secret Option",
+      Default = false,
+      Callback = function(Value)
+            print("Kys")
+      end    
 })
 
 Tab:AddColorpicker({
-	Name = "Your Mom's Color",
-	Default = Color3.fromRGB(255, 0, 0),
-	Callback = function(Value)
-		print(Value)
-	end	  
+      Name = "Your Mom's Color",
+      Default = Color3.fromRGB(255, 0, 0),
+      Callback = function(Value)
+            print(Value)
+      end        
 })
 
 Tab:AddSlider({
-	Name = "Crocs",
-	Min = 16,
-	Max = 100,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Crocs Speed",
-	Callback = function(Value)
-		game.Players.LocalPlayer.character.Humanoid.WalkSpeed = 16
-	end    
+      Name = "Crocs",
+      Min = 16,
+      Max = 100,
+      Default = 5,
+      Color = Color3.fromRGB(255,255,255),
+      Increment = 1,
+      ValueName = "Crocs Speed",
+      Callback = function(Value)
+            game.Players.LocalPlayer.character.Humanoid.WalkSpeed = 16
+      end    
 })
 
 Teb:AddButton({
-	Name = "Crash Server 2 (DANGER)",
-	Callback = function()
-	print("ready")
-	task.wait(1)
-	chat("/e :sm UI UI| :music 2244925180 true 1 inf")
-	task.wait(1)
-      		local args = {
+      Name = "Crash Server 2 (DANGER)",
+      Callback = function()
+      print("ready")
+      task.wait(1)
+      chat("/e :sm UI UI| :music 2244925180 true 1 inf")
+      task.wait(1)
+                  local args = {
     [1] = {
         [1] = "LOAD",
         [2] = "crash server"
@@ -104,45 +104,36 @@ Teb:AddButton({
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
 
-  	end    
+        end    
 })
 
 Tab:AddButton({
-	Name = "Spam Message",
-	Callback = function()
+      Name = "Spam Message",
+      Callback = function()
 chat("/e :m UI UI")
-  	end    
-})
-
-Teb:AddButton({
-	Name = "Boom All",
-	Callback = function()
-while wait() do
-for i = 1,10 do
-Chat(":boom all")
-  	end    
+        end    
 })
 
 Tab:AddButton({
-	Name = "BRRT Aka Boom",
-	Callback = function()
+      Name = "BRRT Aka Boom",
+      Callback = function()
 chat("/e :music 2244925180 true 1 inf| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom| :wait 0.001| :boom")
-  	end    
+        end    
 })
 
 Tab:AddButton({
-	Name = "Космос",
-	Callback = function()
+      Name = "Космос",
+      Callback = function()
 chat("/e :n Космос| :wait 0.01| :n К о с м о с| :wait 0.01| :n К  о  с  м  о  с| :wait 1| :time 0| :vibrate all 0.2| :ambient 100 0 100| :oambient 100 0 100| :loadb crash server")
-  	end    
+        end    
 })
 
 Tab:AddTextbox({
-	Name = "Load Builds",
-	Default = "Builds input",
-	TextDisappear = false,
-	Callback = function(Value)
-		local args = {
+      Name = "Load Builds",
+      Default = "Builds input",
+      TextDisappear = false,
+      Callback = function(Value)
+            local args = {
     [1] = {
         [1] = "LOAD",
         [2] = (Value)
@@ -151,15 +142,15 @@ Tab:AddTextbox({
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
 
-	end	  
+      end        
 })
 
 Teb:AddTextbox({
-	Name = "Spam Builds",
-	Default = "Builds input",
-	TextDisappear = false,
-	Callback = function(Value)
-	print("e")
+      Name = "Spam Builds",
+      Default = "Builds input",
+      TextDisappear = false,
+      Callback = function(Value)
+      print("e")
 local args = {
     [1] = {
         [1] = "LOAD",
@@ -254,56 +245,56 @@ end
 })
 
 Teb:AddTextbox({
-	Name = "Crash Users",
-	Default = "User input",
-	TextDisappear = false,
-	Callback = function(Value)
+      Name = "Crash Users",
+      Default = "User input",
+      TextDisappear = false,
+      Callback = function(Value)
 chat("/e :forceviewcam Value porgumaastik")
-	end	  
+      end        
 })
 
 Tab:AddTextbox({
-	Name = "Run Commands",
-	Default = "Command input",
-	TextDisappear = false,
-	Callback = function(Value)
+      Name = "Run Commands",
+      Default = "Command input",
+      TextDisappear = false,
+      Callback = function(Value)
 chat(Value)
-	end	    
+      end          
 })
 
 local Section2 = Tab:AddSection({
-	Name = "Make sure"
+      Name = "Make sure"
 })
 
 local Section2 = Tab:AddSection({
-	Name = "IT HAS :re or any"
+      Name = "IT HAS :re or any"
 })
 local Emu = Window:MakeTab({
-	Name = "Social Medias",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+      Name = "Social Medias",
+      Icon = "rbxassetid://4483345998",
+      PremiumOnly = false
 })
 
 local Ostrich = Emu:AddSection({
-	Name = "When clicked on any link"
+      Name = "When clicked on any link"
 })
 
 local Ostrich2 = Emu:AddSection({
-	Name = "It will copy into your clipboard"
+      Name = "It will copy into your clipboard"
 })
 
 Emu:AddButton({
-	Name = "Discord",
-	Callback = function()
+      Name = "Discord",
+      Callback = function()
 setclipboard("eek#1521")
-  	end    
+        end    
 })
 
 Emu:AddButton({
-	Name = "Youtube channel",
-	Callback = function()
+      Name = "Youtube channel",
+      Callback = function()
 setclipboard("https://youtube.com/@weerawatR15")
-  	end    
+        end    
 })
 
 OrionLib:Init()
