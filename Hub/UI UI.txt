@@ -114,6 +114,15 @@ chat("/e :m UI UI")
   	end    
 })
 
+Teb:AddButton({
+	Name = "Boom All",
+	Callback = function()
+while wait() do
+for i = 1,10 do
+Chat(":boom all")
+  	end    
+})
+
 Tab:AddButton({
 	Name = "BRRT Aka Boom",
 	Callback = function()
