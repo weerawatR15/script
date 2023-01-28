@@ -49,6 +49,33 @@ local args = {
 
 game:GetService("ReplicatedStorage").Network.CommandSaving:InvokeServer(unpack(args))
 
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "Porgumaastik"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "momma"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "momma"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+
 local ChatStuff = game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
 
 local function chat(msg)
@@ -370,13 +397,13 @@ chat(":runc kick all")
 })
 
 local Tre = Window:MakeTab({
-      Name = "OP Tab",
+      Name = "Danger Tab",
       Icon = "rbxassetid://4483345998",
       PremiumOnly = false
 })
 
 local Sextion2 = Teb:AddSection({
-      Name = "Main"
+      Name = "Don't blame me but this should work"
 })
 
 Tre:AddButton({
