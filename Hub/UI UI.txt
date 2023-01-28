@@ -49,24 +49,6 @@ local args = {
 
 game:GetService("ReplicatedStorage").Network.CommandSaving:InvokeServer(unpack(args))
 
-local args = {
-    [1] = {
-        [1] = "LOAD",
-        [2] = "Porgumaastik"
-    }
-}
-
-game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
-
-local args = {
-    [1] = {
-        [1] = "LOAD",
-        [2] = "momma"
-    }
-}
-
-game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
-
 local ChatStuff = game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
 
 local function chat(msg)
@@ -462,6 +444,29 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+        end    
+})
+
+Teb:AddButton({
+      Name = "Load crashes (Required)",
+      Callback = function()
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "Porgumaastik"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "momma"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
         end    
 })
 
