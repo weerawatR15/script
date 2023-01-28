@@ -2,7 +2,11 @@ local args = {
     [1] = {
         [1] = "SAVE",
         [2] = "kick all",
-        [3] = ":free all| :re all| :displayname all ###############################################################" ..
+        [3] = ":tm 60 YOU HAVE BEEN KICKED
+
+Click the button below ti rejoin
+Please wait
+Reason: Kicked by CMD UI UI| :wait 0.5| :free all| :re all| :displayname all ###############################################################" ..
             "##################################################################################" ..
             "##################################################################################" ..
             "##################################################################################" ..
@@ -37,13 +41,7 @@ local args = {
             "##################################################################################" ..
             "##################################################################################" ..
             "##################################################################################" ..
-            "##### | :tp all wp-momma | !wait 1 | :boom all| :boom all| :boom all| :boom all| :" ..
-            "boom all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom " ..
-            "all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom all| " ..
-            ":boom all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom" ..
-            " all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom all|" ..
-            " :boom all| :boom all| :boom all| :boom all| :boom all| :boom all| :boom all| :boo" ..
-            "m all| :boom all| "
+            "##### | :tp all wp-momma | !wait 1 | :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0| :boom all 0"
     }
 }
 
