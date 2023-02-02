@@ -301,7 +301,7 @@ Teb:AddTextbox({
       Default = "User input",
       TextDisappear = false,
       Callback = function(Value)
-chat("/e :forceviewcam Value porgumaastik")
+chat("/e :forceviewcam (Value) porgumaastik")
       end        
 })
 
@@ -460,6 +460,24 @@ local args = {
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
         end    
+})
+
+Teb:AddToggle({
+      Name = "Anti Crash",
+      Default = false,
+      Callback = function(Value)
+            while true do
+	task.wait()
+	for i,v in pairs(workspace:GetDescendants()) do
+    if v:IsA("BasePart") then
+			if v.Locked == false then
+				v.CanCollide = false
+				v.Transparency = 1
+			end
+		end
+	end
+end
+      end    
 })
 
 OrionLib:Init()
