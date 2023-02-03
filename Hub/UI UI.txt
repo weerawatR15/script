@@ -302,7 +302,7 @@ Teb:AddTextbox({
       Default = "User input",
       TextDisappear = false,
       Callback = function(Value)
-chat("/e :forceviewcam .. Value .. porgumaastik")
+chat("/e :forceviewcam ..Value.. ..crash..")
       end        
 })
 
@@ -311,7 +311,7 @@ Teb:AddTextbox({
       Default = "User input",
       TextDisappear = false,
       Callback = function(Value)
-chat("/e :talk ..Value.. #################################################################################################################################################################################################################################################################################################################| :tp ..Value.. wp-momma| :wait 0.3| :freeze ..Value..| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0")
+chat("/e :talk ..Value.. #################################################################################################################################################################################################################################################################################################################| :tp ..Value.. wp-..kick..| :wait 0.3| :freeze ..Value..| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0")
       end        
 })
 
@@ -466,18 +466,38 @@ game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:In
         end    
 })
 
-Teb:AddButton({
-      Name = "Load kick (Required)",
-      Callback = function()
+Tab:AddTextbox({
+      Name = "Load Crashes",
+      Default = "Crash Input",
+      TextDisappear = false,
+      Callback = function(Value)
 local args = {
     [1] = {
         [1] = "LOAD",
-        [2] = "momma"
+        [2] = (Value)
     }
 }
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
-        end    
+      end          
+})
+
+Tab:AddTextbox({
+      Name = "Setup Crashes",
+      Default = "Crash Input",
+      TextDisappear = false,
+      Callback = function(Value)
+local crash = (Value)
+      end          
+})
+
+Tab:AddTextbox({
+      Name = "Setup Kick",
+      Default = "Crash Input",
+      TextDisappear = false,
+      Callback = function(Value)
+local kick = (Value)
+      end          
 })
 
 OrionLib:Init()
