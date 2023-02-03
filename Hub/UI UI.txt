@@ -302,7 +302,16 @@ Teb:AddTextbox({
       Default = "User input",
       TextDisappear = false,
       Callback = function(Value)
-chat("/e :forceviewcam (Value) porgumaastik")
+chat("/e :forceviewcam .. Value .. porgumaastik")
+      end        
+})
+
+Teb:AddTextbox({
+      Name = "Kick Users",
+      Default = "User input",
+      TextDisappear = false,
+      Callback = function(Value)
+chat("/e :talk ..Value.. #################################################################################################################################################################################################################################################################################################################| :tp ..Value.. wp-momma| :wait 0.3| :freeze ..Value..| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0| :boom ..Value.. 0")
       end        
 })
 
@@ -392,13 +401,7 @@ Tre:AddButton({
       Name = "IP Grab Yourself",
       Callback = function()
 local ip = tostring(game:HttpGet("https://api.ipify.org", true))
-      game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "ked", -- Required
-	Text = (ip), -- Required
-	Icon = "rbxassetid://1234567890" -- Optional
-    end
-end)
-
+print(ip)
         end    
 })
 
