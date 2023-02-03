@@ -302,7 +302,7 @@ Teb:AddTextbox({
       Default = "User input",
       TextDisappear = false,
       Callback = function(plrName)
-chat("/e :forceviewcam plrName crash..")
+chat("/e :forceviewcam .. plrName .., .. crash ..")
      end
 })
 
@@ -311,7 +311,7 @@ Teb:AddTextbox({
       Default = "User input",
       TextDisappear = false,
       Callback = function(Value)
-chat("/e :talk .. Value .. #################################################################################################################################################################################################################################################################################################################| :tp .. Value .. wp-.. kick ..| :wait 0.3| :freeze .. Value ..| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0")
+chat("/e :talk .. Value .. #################################################################################################################################################################################################################################################################################################################| :tp .. Value .., wp-.. kick ..| :wait 0.3| :freeze .. Value ..| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0| :boom .. Value .. 0")
       end        
 })
 
