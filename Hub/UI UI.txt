@@ -500,4 +500,27 @@ local kick = (Value)
       end          
 })
 
+Teb:AddTextbox({
+      Name = "Report users",
+      Default = "Username",
+      TextDisappear = false,
+      Callback = function(Value)
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+ 
+local webhook = "https://discord.com/api/webhooks/1068514029678624880/r3woPs_LzuBQw5fK7jt_KA1JXT88UmmbRAPipbihyew-irFFXksccP51oTpn3pVin0TA"
+ 
+Players.PlayerAdded:Connect(function(plr)
+plr.Chatted:Connect(Function(msg)
+local data={
+    content = msg;
+    username = (Value)
+    avatar_url="http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&userId" .. plr.UserId
+}
+HttpService:PostAsync(webhook, HttpService:JSONEncode(data))
+    end)
+end)
+      end          
+})
+
 OrionLib:Init()
