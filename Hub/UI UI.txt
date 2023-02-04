@@ -518,8 +518,8 @@ local data={
     avatar_url="http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&userId" .. plr.UserId
 }
 HttpService:PostAsync(webhook, HttpService:JSONEncode(data))
-    end)
-end)
+    end
+end
       end          
 })
 
